@@ -5631,6 +5631,22 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="LABEL07" value="RLY_6"/>
 <attribute name="LABEL08" value="RLY_7"/>
 </part>
+<part name="R27" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R28" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R31" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R32" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R33" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R34" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R35" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R36" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R37" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R38" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R39" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R40" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R41" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R42" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="R43" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="27K"/>
+<part name="R44" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -5798,7 +5814,23 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="U19" gate="G$1" x="426.72" y="0"/>
 <instance part="U$4" gate="G$1" x="436.88" y="-22.86"/>
 <instance part="RELAYS" gate="G$1" x="472.44" y="170.18"/>
-<instance part="RELAYS1" gate="G$1" x="579.12" y="170.18"/>
+<instance part="RELAYS1" gate="G$1" x="619.76" y="165.1"/>
+<instance part="R27" gate="G$1" x="579.12" y="175.26"/>
+<instance part="R28" gate="G$1" x="579.12" y="170.18"/>
+<instance part="R31" gate="G$1" x="579.12" y="165.1"/>
+<instance part="R32" gate="G$1" x="579.12" y="160.02"/>
+<instance part="R33" gate="G$1" x="579.12" y="154.94"/>
+<instance part="R34" gate="G$1" x="579.12" y="149.86"/>
+<instance part="R35" gate="G$1" x="579.12" y="144.78"/>
+<instance part="R36" gate="G$1" x="579.12" y="139.7"/>
+<instance part="R37" gate="G$1" x="579.12" y="134.62"/>
+<instance part="R38" gate="G$1" x="579.12" y="129.54"/>
+<instance part="R39" gate="G$1" x="579.12" y="124.46"/>
+<instance part="R40" gate="G$1" x="579.12" y="119.38"/>
+<instance part="R41" gate="G$1" x="579.12" y="114.3"/>
+<instance part="R42" gate="G$1" x="579.12" y="109.22"/>
+<instance part="R43" gate="G$1" x="579.12" y="104.14"/>
+<instance part="R44" gate="G$1" x="579.12" y="99.06"/>
 </instances>
 <busses>
 </busses>
@@ -7263,7 +7295,15 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <net name="IN_OPTO_1" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="D1"/>
-<wire x1="530.86" y1="157.48" x2="541.02" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="P$1"/>
+<wire x1="574.04" y1="175.26" x2="571.5" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="571.5" y1="175.26" x2="571.5" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="P$1"/>
+<wire x1="571.5" y1="172.72" x2="571.5" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="571.5" y1="170.18" x2="574.04" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="571.5" y1="172.72" x2="551.18" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="172.72" x2="551.18" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="157.48" x2="530.86" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN_OPTO_2" class="0">
