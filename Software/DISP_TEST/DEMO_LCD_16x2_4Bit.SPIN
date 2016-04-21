@@ -55,6 +55,7 @@ PUB DEMO
      
     WAITCNT(120_000_000 + CNT)
     LCD.CLEAR
+    LCD.MOVE(1,3)
      
     LCD.STR(STRING("HEX(255) = 0x"))
      
@@ -62,7 +63,7 @@ PUB DEMO
      
     WAITCNT(120_000_000 + CNT)
     LCD.CLEAR
-     
+    LCD.MOVE(1,3)  
     LCD.STR(STRING("DEC(170) = "))
      
     LCD.MOVE(1,4)
