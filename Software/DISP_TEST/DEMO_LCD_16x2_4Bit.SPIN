@@ -11,7 +11,7 @@ PUB DEMO
   repeat
   
     LCD.MOVE(3,1)
-    LCD.STR(STRING("Hello World!"))
+    LCD.STR(STRING("Hello World!Hello World!Hello World!"))
      
     LCD.MOVE(3,2)
     LCD.STR(STRING("1 - 5 = "))
@@ -40,6 +40,41 @@ PUB DEMO
     LCD.MOVE(3,1)
     LCD.STR(STRING("END OF DEMO."))
     LCD.MOVE(4,2)
+    LCD.STR(STRING("HAVE FUN !"))
+    WAITCNT(120_000_000 + CNT)
+    LCD.CLEAR
+
+
+    LCD.MOVE(3,3)
+    LCD.STR(STRING("Hello World!Hello World!Hello World!"))
+     
+    LCD.MOVE(3,4)
+    LCD.STR(STRING("1 - 5 = "))
+     
+    LCD.DEC (1-5)
+     
+    WAITCNT(120_000_000 + CNT)
+    LCD.CLEAR
+     
+    LCD.STR(STRING("HEX(255) = 0x"))
+     
+    LCD.HEX(255,4)
+     
+    WAITCNT(120_000_000 + CNT)
+    LCD.CLEAR
+     
+    LCD.STR(STRING("DEC(170) = "))
+     
+    LCD.MOVE(1,4)
+     
+    LCD.BIN(170,8)
+     
+    WAITCNT(120_000_000 + CNT)
+    LCD.CLEAR
+     
+    LCD.MOVE(3,3)
+    LCD.STR(STRING("END OF DEMO."))
+    LCD.MOVE(4,4)
     LCD.STR(STRING("HAVE FUN !"))
     WAITCNT(120_000_000 + CNT)
     LCD.CLEAR
