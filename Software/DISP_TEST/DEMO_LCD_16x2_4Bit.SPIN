@@ -10,6 +10,7 @@ VAR
   byte temp1
   byte temp2
   byte temp3
+  byte bright
   
 PUB DEMO
   LCD.START
@@ -98,5 +99,11 @@ PUB DEMO
     temp1++
     temp2++
     temp3++
+     
+    LCD.B_CTRL(bright)
+    bright ++
+     
+    if(bright > 3)
+      bright := 0   
 
     
