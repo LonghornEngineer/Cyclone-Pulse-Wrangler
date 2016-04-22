@@ -15,21 +15,7 @@ VAR
 PUB DEMO
   LCD.START
 
-
-  LCD.MOVE(1,1)
-  LCD.STR(STRING("TRANS TEMP:"))
-   
-  LCD.MOVE(1,2)
-  LCD.STR(STRING("E.OIL TEMP:"))
-   
-  LCD.MOVE(1,3)
-  LCD.STR(STRING("WATER TEMP:"))
-
-  LCD.MOVE(1,4)
-  LCD.STR(STRING("ENVRO TEMP:"))
-
-  LCD.MOVE(25,2)
-  LCD.STR(STRING("A/C:"))
+  Setup
   
   repeat
     if(temp0 < 10)
@@ -104,6 +90,29 @@ PUB DEMO
     bright ++
      
     if(bright > 3)
-      bright := 0   
+      bright := 0
 
+    if (temp0 == 254)
+       LCD.Clear
+       Setup
+
+PUB Setup
+
+  
+  LCD.MOVE(1,1)
+  LCD.STR(STRING("TRANS TEMP:"))
+   
+  LCD.MOVE(1,2)
+  LCD.STR(STRING("E.OIL TEMP:"))
+   
+  LCD.MOVE(1,3)
+  LCD.STR(STRING("WATER TEMP:"))
+
+  LCD.MOVE(1,4)
+  LCD.STR(STRING("ENVRO TEMP:"))
+
+  LCD.MOVE(25,2)
+  LCD.STR(STRING("A/C:"))
+
+return
     
