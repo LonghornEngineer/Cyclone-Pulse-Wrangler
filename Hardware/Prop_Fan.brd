@@ -4264,8 +4264,8 @@
 <attribute name="DNAME" value="Parker Dillmann" x="27.432" y="31.75" size="1.778" layer="27" display="off"/>
 <attribute name="REVNUM" value="REV: 1" x="27.432" y="31.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FID1" library="MF_Aesthetics" package="FIDUCIAL_0.5MM" value="FIDUCIAL_0.5MM" x="13.97" y="177.8"/>
-<element name="FID2" library="MF_Aesthetics" package="FIDUCIAL_0.5MM" value="FIDUCIAL_0.5MM" x="13.97" y="170.18"/>
+<element name="FID1" library="MF_Aesthetics" package="FIDUCIAL_0.5MM" value="FIDUCIAL_0.5MM" x="7.62" y="60.198"/>
+<element name="FID2" library="MF_Aesthetics" package="FIDUCIAL_0.5MM" value="FIDUCIAL_0.5MM" x="149.098" y="21.336"/>
 <element name="X1" library="MF_Frequency_Control" package="7MMX5MM" value="ABMM-6.000MHZ-B2-T" x="84.201" y="49.0728"/>
 <element name="U1" library="MF_IC_Digital" package="LQFP44" value="P8X32A-Q44" x="84.582" y="34.544" rot="R90"/>
 <element name="U11" library="PP_Sensors" package="MAX31855_SO-8" value="MAX31855KASA+" x="45.466" y="53.086" rot="R270"/>
