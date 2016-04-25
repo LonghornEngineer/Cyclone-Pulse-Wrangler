@@ -85,16 +85,16 @@ PUB DEMO
     temp1++
     temp2++
     temp3++
-     
-    LCD.B_CTRL(bright)
-    bright ++
-     
-    if(bright > 3)
-      bright := 0
-
+    
+    
     if (temp0 == 254)
-       LCD.Clear
-       Setup
+      LCD.B_CTRL(bright)
+      bright++
+      if(bright > 3)
+        bright := 0
+
+
+
 
 PUB Setup
 
