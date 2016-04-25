@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -5199,6 +5199,232 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 </deviceset>
 </devicesets>
 </library>
+<library name="PP_AnalogIC">
+<packages>
+<package name="ACPL-C87_SSO-8">
+<smd name="P$1" x="-1.905" y="-5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.635" y="-5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$3" x="0.635" y="-5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$4" x="1.905" y="-5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$5" x="1.905" y="5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$6" x="0.635" y="5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$7" x="-0.635" y="5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<smd name="P$8" x="-1.905" y="5.3725" dx="1.905" dy="0.64" layer="1" rot="R90"/>
+<wire x1="-2.925" y1="3.4035" x2="2.925" y2="3.4035" width="0.127" layer="21"/>
+<wire x1="2.925" y1="3.4035" x2="2.925" y2="-3.4035" width="0.127" layer="21"/>
+<wire x1="2.925" y1="-3.4035" x2="-2.925" y2="-3.4035" width="0.127" layer="21"/>
+<wire x1="-2.925" y1="-3.4035" x2="-2.925" y2="3.4035" width="0.127" layer="21"/>
+<circle x="-2" y="-2.6" radius="0.4" width="0.127" layer="21"/>
+<text x="-3.4" y="-3.4035" size="0.8128" layer="25" font="vector" ratio="16" rot="R90">&gt;NAME</text>
+</package>
+<package name="MAX11613_UMAX-8">
+<smd name="P$1" x="-2.15" y="0.975" dx="0.4" dy="1.35" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.15" y="0.325" dx="0.4" dy="1.35" layer="1" rot="R90"/>
+<smd name="P$3" x="-2.15" y="-0.325" dx="0.4" dy="1.35" layer="1" rot="R90"/>
+<smd name="P$4" x="-2.15" y="-0.975" dx="0.4" dy="1.35" layer="1" rot="R90"/>
+<smd name="P$5" x="2.15" y="-0.975" dx="0.4" dy="1.35" layer="1" rot="R270"/>
+<smd name="P$6" x="2.15" y="-0.325" dx="0.4" dy="1.35" layer="1" rot="R270"/>
+<smd name="P$7" x="2.15" y="0.325" dx="0.4" dy="1.35" layer="1" rot="R270"/>
+<smd name="P$8" x="2.15" y="0.975" dx="0.4" dy="1.35" layer="1" rot="R270"/>
+<wire x1="-3" y1="1.4" x2="-1.2" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.4" x2="1.2" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.4" x2="3" y2="1.4" width="0.127" layer="21"/>
+<wire x1="3" y1="1.4" x2="3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.4" x2="1.2" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.2" y1="-1.4" x2="-1.2" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-1.4" x2="-3" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.4" x2="-3" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.4" x2="-1.2" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.4" x2="1.2" y2="-1.4" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.6" y="1.4"/>
+<vertex x="-0.6" y="0.8"/>
+<vertex x="0.6" y="0.8"/>
+<vertex x="0.6" y="1.4"/>
+</polygon>
+<polygon width="0.127" layer="21">
+<vertex x="-3.4" y="1" curve="-90"/>
+<vertex x="-3.6" y="1.2" curve="-90"/>
+<vertex x="-3.4" y="1.4" curve="-90"/>
+<vertex x="-3.2" y="1.2" curve="-90"/>
+</polygon>
+<text x="-3" y="1.8" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ACPL-C87X">
+<pin name="VDD1" x="-2.54" y="-2.54" visible="off" length="short"/>
+<pin name="VIN" x="-2.54" y="-5.08" visible="off" length="short"/>
+<pin name="SHDN" x="-2.54" y="-7.62" visible="off" length="short"/>
+<pin name="GND1" x="-2.54" y="-10.16" visible="off" length="short"/>
+<pin name="VDD2" x="15.24" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="VOUT+" x="15.24" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="VOUT-" x="15.24" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="GND2" x="15.24" y="-10.16" visible="off" length="short" rot="R180"/>
+<text x="1.27" y="-10.16" size="1.016" layer="97" font="vector" align="center-left">GND1</text>
+<text x="11.43" y="-10.16" size="1.016" layer="97" font="vector" rot="R180" align="center-left">GND2</text>
+<text x="1.27" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">SHDN</text>
+<text x="1.27" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">VDD1</text>
+<text x="11.43" y="-2.54" size="1.016" layer="97" font="vector" rot="R180" align="center-left">VDD2</text>
+<text x="1.27" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">VIN</text>
+<text x="11.43" y="-5.08" size="1.016" layer="97" font="vector" rot="R180" align="center-left">VOUT+</text>
+<text x="11.43" y="-7.62" size="1.016" layer="97" font="vector" rot="R180" align="center-left">VOUT-</text>
+<wire x1="0" y1="0" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX11613">
+<pin name="VCC" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="GND" x="-2.54" y="-2.54" visible="off" length="short"/>
+<pin name="SCL" x="-2.54" y="-5.08" visible="off" length="short"/>
+<pin name="SDA" x="-2.54" y="-7.62" visible="off" length="short"/>
+<pin name="A_0" x="17.78" y="0" visible="off" length="short" rot="R180"/>
+<pin name="A_1" x="17.78" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="A_3" x="17.78" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="A_2" x="17.78" y="-5.08" visible="off" length="short" rot="R180"/>
+<text x="0.762" y="-5.08" size="1.016" layer="97" font="vector" align="center-left">SCL</text>
+<text x="0.762" y="-7.62" size="1.016" layer="97" font="vector" align="center-left">SDA</text>
+<text x="14.478" y="0" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">A_0</text>
+<text x="14.478" y="-2.54" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">A_1</text>
+<text x="14.478" y="-5.08" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">A_2</text>
+<text x="14.478" y="-7.62" size="1.016" layer="97" font="vector" rot="MR0" align="center-left">A_3</text>
+<text x="0.762" y="-2.54" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">VSS (GND)</text>
+<text x="0.762" y="0" size="1.016" layer="97" font="vector" rot="MR180" align="center-left">VCC</text>
+<wire x1="0" y1="1.27" x2="0" y2="-8.89" width="0.127" layer="94"/>
+<wire x1="0" y1="-8.89" x2="15.24" y2="-8.89" width="0.127" layer="94"/>
+<wire x1="15.24" y1="-8.89" x2="15.24" y2="1.27" width="0.127" layer="94"/>
+<wire x1="15.24" y1="1.27" x2="0" y2="1.27" width="0.127" layer="94"/>
+<text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ACPL-C87X" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ACPL-C87X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ACPL-C87_SSO-8">
+<connects>
+<connect gate="G$1" pin="GND1" pad="P$4"/>
+<connect gate="G$1" pin="GND2" pad="P$5"/>
+<connect gate="G$1" pin="SHDN" pad="P$3"/>
+<connect gate="G$1" pin="VDD1" pad="P$1"/>
+<connect gate="G$1" pin="VDD2" pad="P$8"/>
+<connect gate="G$1" pin="VIN" pad="P$2"/>
+<connect gate="G$1" pin="VOUT+" pad="P$7"/>
+<connect gate="G$1" pin="VOUT-" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX11613" prefix="U">
+<description>&lt;b&gt;Manufacturer Part #:&lt;/b&gt; MAX11613&lt;br/&gt;
+&lt;b&gt;Manufacturer:&lt;/b&gt; Maxim Integrated&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Analog to Digital Converters - ADC 12-Bit 4Ch 94.4sps 3.6V Precision ADC &lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX11613" x="0" y="0"/>
+</gates>
+<devices>
+<device name="EUA+" package="MAX11613_UMAX-8">
+<connects>
+<connect gate="G$1" pin="A_0" pad="P$1"/>
+<connect gate="G$1" pin="A_1" pad="P$2"/>
+<connect gate="G$1" pin="A_2" pad="P$3"/>
+<connect gate="G$1" pin="A_3" pad="P$4"/>
+<connect gate="G$1" pin="GND" pad="P$7"/>
+<connect gate="G$1" pin="SCL" pad="P$5"/>
+<connect gate="G$1" pin="SDA" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="MF_IC_Power">
+<packages>
+<package name="SOT-23-5">
+<description>&lt;b&gt;Description:&lt;/b&gt; Standard SOT-23-5 Package. &lt;br/&gt;</description>
+<smd name="P$1" x="-1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$2" x="-1.35" y="0" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$3" x="-1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$5" x="1.35" y="0.95" dx="1.05" dy="0.6" layer="1"/>
+<smd name="P$4" x="1.35" y="-0.95" dx="1.05" dy="0.6" layer="1"/>
+<wire x1="-2.2" y1="1.6" x2="-0.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="1.6" x2="2.2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.2" y1="1.6" x2="2.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-1.6" x2="0.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-1.6" x2="-2.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1.6" x2="-2.2" y2="1.6" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.6" y="1.6"/>
+<vertex x="-0.6" y="0.8"/>
+<vertex x="0.6" y="0.8"/>
+<vertex x="0.6" y="1.6"/>
+</polygon>
+<wire x1="-0.6" y1="1.6" x2="-0.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="0.6" y1="1.6" x2="0.6" y2="-1.6" width="0.127" layer="21"/>
+<text x="-2.2" y="2" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-2.8" y="1" curve="-90"/>
+<vertex x="-3" y="1.2" curve="-90"/>
+<vertex x="-2.8" y="1.4" curve="-90"/>
+<vertex x="-2.6" y="1.2" curve="-90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="VOLTAGE_REGULATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt; Symbol for simple voltage regulators.&lt;br/&gt;</description>
+<pin name="VIN" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="VOUT" x="12.7" y="0" visible="off" length="short" rot="R180"/>
+<pin name="GND/ADJ" x="5.08" y="-7.62" visible="off" length="short" rot="R90"/>
+<text x="0.762" y="0" size="1.016" layer="97" font="vector" align="center-left">VIN</text>
+<text x="9.398" y="0" size="1.016" layer="97" font="vector" rot="R180" align="center-left">VOUT</text>
+<text x="5.08" y="-3.81" size="1.016" layer="97" font="vector" rot="R180" align="center">GND/ADJ</text>
+<wire x1="0" y1="1.27" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="1.27" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<text x="0" y="5.08" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="0" y="2.54" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TPS7B69" prefix="U" uservalue="yes">
+<description>&lt;b&gt;Manufacturer Part #:&lt;/b&gt; TPS7B69&lt;br/&gt;
+&lt;b&gt;Manufacturer: &lt;/b&gt; Texas Instruments&lt;br/&gt;
+&lt;b&gt;Description: &lt;/b&gt; LDO Voltage Regulators&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="GND/ADJ" pad="P$3 P$4"/>
+<connect gate="G$1" pin="VIN" pad="P$1"/>
+<connect gate="G$1" pin="VOUT" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5426,6 +5652,24 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="C40" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0805" value="0.1uF"/>
 <part name="R12" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
 <part name="R13" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="10K"/>
+<part name="U28" library="PP_AnalogIC" deviceset="ACPL-C87X" device="" value="ACPL-C870-000E"/>
+<part name="C41" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value=".1uF"/>
+<part name="U29" library="PP_AnalogIC" deviceset="MAX11613" device="EUA+"/>
+<part name="R43" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="220"/>
+<part name="U$38" library="MF_Aesthetics" deviceset="GND_RAIL" device="" value="GND"/>
+<part name="U$39" library="MF_Aesthetics" deviceset="POWER_RAIL" device="" value="3.3V"/>
+<part name="C42" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value=".1uF"/>
+<part name="U$40" library="MF_Aesthetics" deviceset="GND_RAIL" device="" value="CHASSIS_GND"/>
+<part name="R44" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="220"/>
+<part name="R45" library="MF_Passives" deviceset="RESISTOR" device="_0603" value="220"/>
+<part name="C43" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value=".1uF"/>
+<part name="U$41" library="MF_Aesthetics" deviceset="POWER_RAIL" device="" value="12V_BATT_ON"/>
+<part name="J5" library="PP_Connectors" deviceset="CON_01X02" device="_1546215-2" value="1546215-2">
+<attribute name="LABEL01" value="DASH"/>
+</part>
+<part name="C44" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_1210" value="10uF"/>
+<part name="C45" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_1210" value="10uF"/>
+<part name="U30" library="MF_IC_Power" deviceset="TPS7B69" device="" value="TPS7B6950QDBVRQ1"/>
 </parts>
 <sheets>
 <sheet>
@@ -5626,6 +5870,22 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="C40" gate="G$1" x="337.82" y="-17.78"/>
 <instance part="R12" gate="G$1" x="345.44" y="12.7" rot="R90"/>
 <instance part="R13" gate="G$1" x="335.28" y="12.7" rot="R90"/>
+<instance part="U28" gate="G$1" x="492.76" y="0"/>
+<instance part="C41" gate="G$1" x="576.58" y="-2.54"/>
+<instance part="U29" gate="G$1" x="553.72" y="-2.54" rot="MR0"/>
+<instance part="R43" gate="G$1" x="523.24" y="-2.54"/>
+<instance part="U$38" gate="G$1" x="576.58" y="-20.32"/>
+<instance part="U$39" gate="G$1" x="576.58" y="12.7"/>
+<instance part="C42" gate="G$1" x="515.62" y="-10.16"/>
+<instance part="U$40" gate="G$1" x="462.28" y="-20.32"/>
+<instance part="R44" gate="G$1" x="474.98" y="-5.08"/>
+<instance part="R45" gate="G$1" x="474.98" y="0"/>
+<instance part="C43" gate="G$1" x="568.96" y="-2.54"/>
+<instance part="U$41" gate="G$1" x="434.34" y="25.4"/>
+<instance part="J5" gate="G$1" x="444.5" y="0" rot="MR0"/>
+<instance part="C44" gate="G$1" x="449.58" y="12.7"/>
+<instance part="C45" gate="G$1" x="472.44" y="12.7"/>
+<instance part="U30" gate="G$1" x="457.2" y="20.32"/>
 </instances>
 <busses>
 </busses>
@@ -6053,6 +6313,35 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <junction x="335.28" y="-2.54"/>
 <junction x="337.82" y="-22.86"/>
 </segment>
+<segment>
+<wire x1="556.26" y1="-5.08" x2="563.88" y2="-5.08" width="0.1524" layer="91"/>
+<label x="558.8" y="-5.08" size="0.8128" layer="95" font="vector"/>
+<pinref part="C41" gate="G$1" pin="2"/>
+<pinref part="U29" gate="G$1" pin="GND"/>
+<pinref part="U$38" gate="G$1" pin="P$1"/>
+<wire x1="576.58" y1="-17.78" x2="576.58" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="576.58" y1="-15.24" x2="576.58" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="576.58" y1="-15.24" x2="568.96" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="568.96" y1="-15.24" x2="563.88" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="-15.24" x2="515.62" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="-15.24" x2="510.54" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="-15.24" x2="510.54" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="U28" gate="G$1" pin="GND2"/>
+<wire x1="510.54" y1="-10.16" x2="508" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="-5.08" x2="563.88" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="563.88" y="-15.24"/>
+<pinref part="C42" gate="G$1" pin="2"/>
+<wire x1="515.62" y1="-12.7" x2="515.62" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="515.62" y="-15.24"/>
+<pinref part="C43" gate="G$1" pin="2"/>
+<wire x1="568.96" y1="-5.08" x2="568.96" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="568.96" y="-15.24"/>
+<junction x="576.58" y="-15.24"/>
+<pinref part="U28" gate="G$1" pin="VOUT-"/>
+<wire x1="508" y1="-7.62" x2="510.54" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="-7.62" x2="510.54" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="510.54" y="-10.16"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -6286,6 +6575,27 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <junction x="345.44" y="20.32"/>
 <junction x="403.86" y="20.32"/>
 </segment>
+<segment>
+<pinref part="C41" gate="G$1" pin="1"/>
+<pinref part="U$39" gate="G$1" pin="P$1"/>
+<wire x1="576.58" y1="0" x2="576.58" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="U28" gate="G$1" pin="VDD2"/>
+<wire x1="576.58" y1="5.08" x2="576.58" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="508" y1="-2.54" x2="510.54" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="-2.54" x2="510.54" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="510.54" y1="5.08" x2="563.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="5.08" x2="568.96" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="568.96" y1="5.08" x2="576.58" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="-2.54" x2="563.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="-2.54" x2="563.88" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U29" gate="G$1" pin="VCC"/>
+<label x="558.8" y="-2.54" size="0.8128" layer="95" font="vector"/>
+<junction x="563.88" y="5.08"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="568.96" y1="0" x2="568.96" y2="5.08" width="0.1524" layer="91"/>
+<junction x="568.96" y="5.08"/>
+<junction x="576.58" y="5.08"/>
+</segment>
 </net>
 <net name="X1" class="0">
 <segment>
@@ -6478,6 +6788,34 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <junction x="568.96" y="121.92"/>
 <junction x="568.96" y="137.16"/>
 </segment>
+<segment>
+<pinref part="U28" gate="G$1" pin="GND1"/>
+<pinref part="U$40" gate="G$1" pin="P$1"/>
+<wire x1="490.22" y1="-10.16" x2="487.68" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="487.68" y1="-10.16" x2="467.36" y2="-10.16" width="0.1524" layer="91"/>
+<label x="474.98" y="-10.16" size="1.016" layer="95" font="vector"/>
+<pinref part="U28" gate="G$1" pin="SHDN"/>
+<wire x1="490.22" y1="-7.62" x2="487.68" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="487.68" y1="-7.62" x2="487.68" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="487.68" y="-10.16"/>
+<pinref part="R44" gate="G$1" pin="P$1"/>
+<wire x1="469.9" y1="-5.08" x2="467.36" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="467.36" y1="-5.08" x2="467.36" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="467.36" y="-10.16"/>
+<wire x1="467.36" y1="-10.16" x2="462.28" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="-10.16" x2="462.28" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="7.62" x2="462.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="-17.78" x2="462.28" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="462.28" y="-10.16"/>
+<wire x1="449.58" y1="10.16" x2="449.58" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="7.62" x2="462.28" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="10.16" x2="472.44" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="7.62" x2="462.28" y2="7.62" width="0.1524" layer="91"/>
+<junction x="462.28" y="7.62"/>
+<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="C45" gate="G$1" pin="2"/>
+<pinref part="U30" gate="G$1" pin="GND/ADJ"/>
+</segment>
 </net>
 <net name="12V_BATT" class="0">
 <segment>
@@ -6507,6 +6845,16 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="D2" gate="G$1" pin="CATHODE"/>
 <wire x1="-63.5" y1="160.02" x2="-58.42" y2="160.02" width="0.1524" layer="91"/>
 <junction x="-58.42" y="160.02"/>
+</segment>
+<segment>
+<wire x1="454.66" y1="20.32" x2="449.58" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$41" gate="G$1" pin="P$1"/>
+<wire x1="449.58" y1="20.32" x2="434.34" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="20.32" x2="434.34" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="449.58" y1="15.24" x2="449.58" y2="20.32" width="0.1524" layer="91"/>
+<junction x="449.58" y="20.32"/>
+<pinref part="C44" gate="G$1" pin="1"/>
+<pinref part="U30" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="12V_CLEAN" class="0">
@@ -7689,6 +8037,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <label x="12.7" y="40.64" size="1.016" layer="95" font="vector"/>
 <pinref part="U1" gate="G$1" pin="P9"/>
 </segment>
+<segment>
+<wire x1="556.26" y1="-10.16" x2="561.34" y2="-10.16" width="0.1524" layer="91"/>
+<label x="558.8" y="-10.16" size="0.8128" layer="95" font="vector"/>
+<pinref part="U29" gate="G$1" pin="SDA"/>
+</segment>
 </net>
 <net name="SCL_1" class="0">
 <segment>
@@ -7702,6 +8055,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="22.86" y1="38.1" x2="12.7" y2="38.1" width="0.1524" layer="91"/>
 <label x="12.7" y="38.1" size="1.016" layer="95" font="vector"/>
 <pinref part="U1" gate="G$1" pin="P10"/>
+</segment>
+<segment>
+<wire x1="561.34" y1="-7.62" x2="556.26" y2="-7.62" width="0.1524" layer="91"/>
+<label x="558.8" y="-7.62" size="0.8128" layer="95" font="vector"/>
+<pinref part="U29" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7718,6 +8076,79 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="C40" gate="G$1" pin="1"/>
 <wire x1="358.14" y1="-5.08" x2="337.82" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="337.82" y1="-5.08" x2="337.82" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A0" class="0">
+<segment>
+<wire x1="535.94" y1="-2.54" x2="528.32" y2="-2.54" width="0.1524" layer="91"/>
+<label x="530.86" y="-2.54" size="0.8128" layer="95" font="vector"/>
+<pinref part="U29" gate="G$1" pin="A_0"/>
+<pinref part="R43" gate="G$1" pin="P$2"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<wire x1="535.94" y1="-5.08" x2="530.86" y2="-5.08" width="0.1524" layer="91"/>
+<label x="530.86" y="-5.08" size="0.8128" layer="95" font="vector"/>
+<pinref part="U29" gate="G$1" pin="A_1"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<wire x1="530.86" y1="-10.16" x2="535.94" y2="-10.16" width="0.1524" layer="91"/>
+<label x="530.86" y="-10.16" size="0.8128" layer="95" font="vector"/>
+<pinref part="U29" gate="G$1" pin="A_3"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<wire x1="535.94" y1="-7.62" x2="530.86" y2="-7.62" width="0.1524" layer="91"/>
+<label x="530.86" y="-7.62" size="0.8128" layer="95" font="vector"/>
+<pinref part="U29" gate="G$1" pin="A_2"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="R43" gate="G$1" pin="P$1"/>
+<wire x1="518.16" y1="-2.54" x2="515.62" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="-2.54" x2="515.62" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="-5.08" x2="508" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="U28" gate="G$1" pin="VOUT+"/>
+<pinref part="C42" gate="G$1" pin="1"/>
+<wire x1="515.62" y1="-7.62" x2="515.62" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="515.62" y="-5.08"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="U28" gate="G$1" pin="VIN"/>
+<wire x1="490.22" y1="-5.08" x2="482.6" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R44" gate="G$1" pin="P$2"/>
+<pinref part="R45" gate="G$1" pin="P$2"/>
+<wire x1="482.6" y1="-5.08" x2="480.06" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="480.06" y1="0" x2="482.6" y2="0" width="0.1524" layer="91"/>
+<wire x1="482.6" y1="0" x2="482.6" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="482.6" y="-5.08"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="R45" gate="G$1" pin="P$1"/>
+<pinref part="J5" gate="G$1" pin="PIN1"/>
+<wire x1="469.9" y1="0" x2="447.04" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_5V" class="0">
+<segment>
+<wire x1="469.9" y1="20.32" x2="472.44" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="20.32" x2="487.68" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="487.68" y1="20.32" x2="487.68" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U28" gate="G$1" pin="VDD1"/>
+<wire x1="487.68" y1="-2.54" x2="490.22" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="15.24" x2="472.44" y2="20.32" width="0.1524" layer="91"/>
+<junction x="472.44" y="20.32"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+<pinref part="U30" gate="G$1" pin="VOUT"/>
 </segment>
 </net>
 </nets>
