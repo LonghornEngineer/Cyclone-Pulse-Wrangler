@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7530,8 +7530,8 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <text x="0" y="-2.54" size="1.016" layer="96" font="vector" rot="R180" align="center">&gt;VALUE</text>
 <polygon width="0.1524" layer="94">
 <vertex x="-1.27" y="0"/>
+<vertex x="0" y="-1.27"/>
 <vertex x="1.27" y="0"/>
-<vertex x="0" y="-1.524"/>
 </polygon>
 </symbol>
 </symbols>
@@ -7967,20 +7967,20 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <devices>
 <device name="" package="CU40045-UW1J">
 <connects>
-<connect gate="G$1" pin="D0" pad="P$8"/>
-<connect gate="G$1" pin="D1" pad="P$7"/>
-<connect gate="G$1" pin="D2" pad="P$6"/>
-<connect gate="G$1" pin="D3" pad="P$5"/>
-<connect gate="G$1" pin="D4" pad="P$4"/>
-<connect gate="G$1" pin="D5" pad="P$3"/>
-<connect gate="G$1" pin="D6" pad="P$2"/>
-<connect gate="G$1" pin="D7" pad="P$1"/>
-<connect gate="G$1" pin="E1" pad="P$9"/>
-<connect gate="G$1" pin="E2" pad="P$15"/>
-<connect gate="G$1" pin="GND" pad="P$13"/>
-<connect gate="G$1" pin="R/W" pad="P$10"/>
-<connect gate="G$1" pin="RS" pad="P$11"/>
-<connect gate="G$1" pin="VCC" pad="P$14"/>
+<connect gate="G$1" pin="D0" pad="P$7"/>
+<connect gate="G$1" pin="D1" pad="P$8"/>
+<connect gate="G$1" pin="D2" pad="P$5"/>
+<connect gate="G$1" pin="D3" pad="P$6"/>
+<connect gate="G$1" pin="D4" pad="P$3"/>
+<connect gate="G$1" pin="D5" pad="P$4"/>
+<connect gate="G$1" pin="D6" pad="P$1"/>
+<connect gate="G$1" pin="D7" pad="P$2"/>
+<connect gate="G$1" pin="E1" pad="P$10"/>
+<connect gate="G$1" pin="E2" pad="P$16"/>
+<connect gate="G$1" pin="GND" pad="P$14"/>
+<connect gate="G$1" pin="R/W" pad="P$9"/>
+<connect gate="G$1" pin="RS" pad="P$12"/>
+<connect gate="G$1" pin="VCC" pad="P$13"/>
 </connects>
 <technologies>
 <technology name=""/>
