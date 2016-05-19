@@ -589,8 +589,8 @@
 <text x="-6.4516" y="6.604" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
 </package>
 <package name="12.5MM_CAP_PTH">
-<pad name="POS" x="0" y="2.5" drill="0.7" diameter="1.6764" shape="long"/>
-<pad name="NEG" x="0" y="-2.5" drill="0.7" diameter="1.6764" shape="long"/>
+<pad name="POS" x="0" y="2.5" drill="0.8" diameter="1.6764" shape="long"/>
+<pad name="NEG" x="0" y="-2.5" drill="0.8" diameter="1.6764" shape="long"/>
 <circle x="0" y="0" radius="6.5" width="0.127" layer="21"/>
 <wire x1="0" y1="6" x2="0" y2="4" width="0.127" layer="21"/>
 <wire x1="-1" y1="5" x2="1" y2="5" width="0.127" layer="21"/>
@@ -1107,6 +1107,21 @@
 </polygon>
 <text x="-5.08" y="3.175" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
 </package>
+<package name="CASE_B">
+<smd name="P" x="-1.375" y="0" dx="1.35" dy="2.7" layer="1"/>
+<smd name="N" x="1.375" y="0" dx="1.35" dy="2.7" layer="1"/>
+<wire x1="-2.54" y1="1.905" x2="-2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="2.54" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.905" x2="-2.54" y2="1.905" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-2.58" y="1.905"/>
+<vertex x="-3.175" y="1.27"/>
+<vertex x="-3.175" y="-1.27"/>
+<vertex x="-2.58" y="-1.905"/>
+</polygon>
+<text x="-2.58" y="2.175" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1607,6 +1622,15 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="_CASE_B" package="CASE_B">
+<connects>
+<connect gate="G$1" pin="NEG" pad="N"/>
+<connect gate="G$1" pin="POS" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TVS_DIODE" prefix="TVS" uservalue="yes">
@@ -1887,6 +1911,21 @@
 <vertex x="-1.07" y="-0.635"/>
 </polygon>
 </package>
+<package name="WP1043">
+<pad name="A" x="0" y="1.27" drill="0.9" shape="octagon" rot="R270"/>
+<pad name="C" x="0" y="-1.27" drill="0.9" shape="octagon" rot="R180"/>
+<wire x1="1.825" y1="3.075" x2="1.825" y2="-3.075" width="0.127" layer="21"/>
+<wire x1="1.825" y1="-3.075" x2="-1.825" y2="-3.075" width="0.127" layer="21"/>
+<wire x1="-1.825" y1="-3.075" x2="-1.825" y2="3.075" width="0.127" layer="21"/>
+<wire x1="-1.825" y1="3.075" x2="1.825" y2="3.075" width="0.127" layer="21"/>
+<text x="-1.825" y="3.81" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-1.825" y="-3.075"/>
+<vertex x="-1.825" y="-3.81"/>
+<vertex x="1.825" y="-3.81"/>
+<vertex x="1.825" y="-3.075"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_SINGLE">
@@ -1957,6 +1996,15 @@
 <connects>
 <connect gate="G$1" pin="ANODE" pad="ANODE"/>
 <connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_WP1043" package="WP1043">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="A"/>
+<connect gate="G$1" pin="CATHODE" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2692,6 +2740,36 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <hole x="17.855" y="-4.24" drill="1.6"/>
 <circle x="11.88" y="0" radius="1.27" width="0.127" layer="21"/>
 </package>
+<package name="TC2030_LEG">
+<smd name="P$1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="P$2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="P$3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="P$4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="P$5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<smd name="P$6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100" cream="no"/>
+<hole x="2.54" y="1.016" drill="0.9906"/>
+<hole x="2.54" y="-1.016" drill="0.9906"/>
+<hole x="-2.54" y="0" drill="0.9906"/>
+<wire x1="3.683" y1="-3.048" x2="-3.683" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-3.683" y1="-3.048" x2="-4.953" y2="-1.778" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4.953" y1="-1.778" x2="-4.953" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-4.953" y1="1.778" x2="-3.683" y2="3.048" width="0.127" layer="21" curve="-90"/>
+<wire x1="-3.683" y1="3.048" x2="3.683" y2="3.048" width="0.127" layer="21"/>
+<wire x1="3.683" y1="3.048" x2="4.953" y2="1.778" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.953" y1="1.778" x2="4.953" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="4.953" y1="-1.778" x2="3.683" y2="-3.048" width="0.127" layer="21" curve="-90"/>
+<text x="-1.27" y="-3.81" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL01</text>
+<text x="-1.27" y="3.81" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL02</text>
+<text x="0" y="-3.81" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL03</text>
+<text x="0" y="3.81" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL04</text>
+<text x="1.27" y="-3.81" size="0.8128" layer="21" font="vector" ratio="16" rot="R270" align="center-left">&gt;LABEL05</text>
+<text x="1.27" y="3.81" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-left">&gt;LABEL06</text>
+<text x="-5.715" y="0" size="0.8128" layer="25" font="vector" ratio="16" rot="R90" align="center">&gt;NAME</text>
+<hole x="-2.54" y="2.54" drill="2.375"/>
+<hole x="0.635" y="2.54" drill="2.375"/>
+<hole x="0.635" y="-2.54" drill="2.375"/>
+<hole x="-2.54" y="-2.54" drill="2.375"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEST_POINT_SINGLE">
@@ -2951,6 +3029,19 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="LABEL05" value="" constant="no"/>
 <attribute name="LABEL06" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="_TC2030_LEG" package="TC2030_LEG">
+<connects>
+<connect gate="G$1" pin="PIN1" pad="P$1"/>
+<connect gate="G$1" pin="PIN2" pad="P$2"/>
+<connect gate="G$1" pin="PIN3" pad="P$3"/>
+<connect gate="G$1" pin="PIN4" pad="P$4"/>
+<connect gate="G$1" pin="PIN5" pad="P$5"/>
+<connect gate="G$1" pin="PIN6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3534,6 +3625,16 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="-5.08" y1="-13.97" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
 <text x="-5.08" y="2.54" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
+<package name="AP1084_TO-252-3L">
+<smd name="3" x="0" y="0" dx="5.6" dy="5.6" layer="1"/>
+<smd name="1" x="-2.25" y="-7.2" dx="2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="2.25" y="-7.2" dx="2" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-3.81" y1="3.81" x2="3.81" y2="3.81" width="0.127" layer="21"/>
+<wire x1="3.81" y1="3.81" x2="3.81" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-8.89" x2="-3.81" y2="-8.89" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-8.89" x2="-3.81" y2="3.81" width="0.127" layer="21"/>
+<text x="-3.81" y="4.445" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SIMPLE_VOLTAGE_REG">
@@ -3612,6 +3713,16 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="3"/>
 <connect gate="G$1" pin="OUT" pad="2 PAD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_AP1084" package="AP1084_TO-252-3L">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7887,7 +7998,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <library name="PP_Displays">
 <packages>
 <package name="CU40045-UW1J">
-<text x="-3.81" y="12.065" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<text x="-4.425" y="14.605" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 <pad name="P$1" x="-1.27" y="8.89" drill="1.1" rot="R180"/>
 <pad name="P$2" x="1.27" y="8.89" drill="1.1" rot="R180"/>
 <pad name="P$3" x="-1.27" y="6.35" drill="1.1" rot="R180"/>
@@ -7904,20 +8015,20 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pad name="P$14" x="1.27" y="-6.35" drill="1.1" rot="R180"/>
 <pad name="P$15" x="-1.27" y="-8.89" drill="1.1" rot="R180"/>
 <pad name="P$16" x="1.27" y="-8.89" drill="1.1" rot="R180"/>
-<wire x1="3.81" y1="-11.43" x2="-3.81" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-11.43" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="11.43" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="11.43" x2="3.81" y2="11.43" width="0.127" layer="21"/>
-<wire x1="3.81" y1="11.43" x2="3.81" y2="-11.43" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.425" y1="-13.99" x2="-4.425" y2="-13.99" width="0.127" layer="21"/>
+<wire x1="-4.425" y1="-13.99" x2="-4.425" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-4.425" y1="-1.27" x2="-4.425" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-4.425" y1="1.27" x2="-4.425" y2="13.99" width="0.127" layer="21"/>
+<wire x1="-4.425" y1="13.99" x2="4.425" y2="13.99" width="0.127" layer="21"/>
+<wire x1="4.425" y1="13.99" x2="4.425" y2="-13.99" width="0.127" layer="21"/>
+<wire x1="-4.425" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-4.425" y2="1.27" width="0.127" layer="21"/>
 <polygon width="0.127" layer="21">
-<vertex x="-3.81" y="11.43"/>
-<vertex x="-2.54" y="11.43"/>
-<vertex x="-2.54" y="8.89"/>
-<vertex x="-3.81" y="8.89"/>
+<vertex x="-4.425" y="13.97"/>
+<vertex x="-3.155" y="13.97"/>
+<vertex x="-3.155" y="11.43"/>
+<vertex x="-4.425" y="11.43"/>
 </polygon>
 </package>
 </packages>
