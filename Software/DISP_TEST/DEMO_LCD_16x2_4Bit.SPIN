@@ -1,6 +1,6 @@
 CON
   _CLKMODE      = XTAL1 + PLL16X                        
-  _XINFREQ      = 5_000_000
+  _XINFREQ      = 6_000_000
 
 OBJ
   LCD : "LCD_16X2_4BIT"
@@ -92,6 +92,8 @@ PUB DEMO
       bright++
       if(bright > 3)
         bright := 0
+
+    waitcnt(cnt+clkfreq/8)
 
 
 
