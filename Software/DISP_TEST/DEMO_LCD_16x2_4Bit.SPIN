@@ -93,7 +93,7 @@ PUB DEMO
       if(bright > 3)
         bright := 0
 
-    waitcnt(cnt+clkfreq/8)
+    'waitcnt(cnt+clkfreq/8)
 
 
 
