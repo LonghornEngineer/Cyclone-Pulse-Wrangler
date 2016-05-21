@@ -4,6 +4,8 @@ CON
 
 OBJ
   LCD : "LCD_16X2_4BIT"
+  TC  : "MAX31855K"
+  SEN : "Prop_Fan_Sensors"
 
 VAR
   byte temp0
@@ -11,9 +13,15 @@ VAR
   byte temp2
   byte temp3
   byte bright
+
+  byte count
+
+  long ID
   
-PUB DEMO
+PUB MAIN
   LCD.START
+  TC.START
+  SEN.START
 
   Setup
   
@@ -76,26 +84,61 @@ PUB DEMO
 
     LCD.MOVE(29,2)
     
-    if(temp0//2)
-      LCD.STR(STRING("/"))
-    else
-      LCD.STR(STRING("\"))
+    'if(count//2)
+    '  LCD.STR(STRING("/"))
+    'else
+    '  LCD.STR(STRING("\"))
+
+    LCD.MOVE(28,3)
+
+    'ID := SEN.Get_ID
+
+    'LCD.BIN(ID,8)
+
+    'ID := SEN.Get_Status
+    'LCD.MOVE(28,4)
+    'LCD.BIN(ID,8)
+
+    ID := SEN.Get_Data(0)
+    LCD.MOVE(20,1)  
+    LCD.BIN(ID,16)
+    LCD.MOVE(20,2)
+    LCD.STR(STRING("        "))
+    LCD.MOVE(20,2)
+    LCD.DEC(fixA(ID))
+
       
-    temp0++
-    temp1++
-    temp2++
-    temp3++
+    temp0 :=  TC.GET_TEMP(0)  
+    temp1 :=  TC.GET_TEMP(1)
+    temp2 :=  TC.GET_TEMP(2)
+    temp3 :=  TC.GET_TEMP(3)
+
+    if(TC.GET_FAULTS(0))
+      temp0 := TC.GET_FAULTS(0)
+
+    if(TC.GET_FAULTS(1))
+      temp1 := TC.GET_FAULTS(1)
+
+    if(TC.GET_FAULTS(2))
+      temp2 := TC.GET_FAULTS(2)
+
+    if(TC.GET_FAULTS(3))
+      temp3 := TC.GET_FAULTS(3)
     
     
-    if (temp0 == 254)
+    if (count == 254)
       LCD.B_CTRL(bright)
       bright++
       if(bright > 3)
         bright := 0
 
-    'waitcnt(cnt+clkfreq/8)
 
+    count++
 
+    waitcnt(cnt+clkfreq/8)
+
+pri fixA(d)
+  return d << 18 ~> 18
 
 
 PUB Setup
@@ -115,6 +158,9 @@ PUB Setup
 
   LCD.MOVE(25,2)
   LCD.STR(STRING("A/C:"))
+
+  LCD.MOVE(25,3)
+  LCD.STR(STRING("ID:"))
 
 return
     
