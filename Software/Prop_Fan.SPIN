@@ -6,6 +6,8 @@ OBJ
   LCD : "LCD_16X2_4BIT"
   TC  : "MAX31855K"
   SEN : "Prop_Fan_Sensors"
+  MATH: "SL32_INTEngine_2"
+  
 
 VAR
   byte temp0
@@ -17,6 +19,7 @@ VAR
   byte count
 
   long ID
+  long Degree
   
 PUB MAIN
   LCD.START
@@ -82,30 +85,34 @@ PUB MAIN
       LCD.MOVE(14,4)
       LCD.DEC(temp3)
 
-    LCD.MOVE(29,2)
+    LCD.MOVE(20,1)
+    LCD.STR(STRING("      "))
+    LCD.MOVE(20,2)
+    LCD.STR(STRING("      "))
+    LCD.MOVE(20,3)
+    LCD.STR(STRING("      "))
+    LCD.MOVE(20,4)
+    LCD.STR(STRING("                ")) 
+
+
+    ID := SEN.Get_FXO_Data(0)
+    LCD.MOVE(20,1)
+    LCD.DEC(ID)
+    'LCD.BIN(ID,16)
     
-    'if(count//2)
-    '  LCD.STR(STRING("/"))
-    'else
-    '  LCD.STR(STRING("\"))
-
-    LCD.MOVE(28,3)
-
-    'ID := SEN.Get_ID
-
-    'LCD.BIN(ID,8)
-
-    'ID := SEN.Get_Status
-    'LCD.MOVE(28,4)
-    'LCD.BIN(ID,8)
-
-    ID := SEN.Get_Data(0)
-    LCD.MOVE(20,1)  
-    LCD.BIN(ID,16)
+    ID := SEN.Get_FXO_Data(1)
     LCD.MOVE(20,2)
-    LCD.STR(STRING("        "))
-    LCD.MOVE(20,2)
-    LCD.DEC(fixA(ID))
+    LCD.DEC(ID)
+    'LCD.BIN(ID,16)
+
+    ID := SEN.Get_FXO_Data(2)
+    LCD.MOVE(20,3)
+    LCD.DEC(ID)
+    'LCD.BIN(ID,16)
+
+    LCD.MOVE(20,4)
+    Degree := MATH.arcTan(SEN.Get_FXO_Data(1), SEN.Get_FXO_Data(0))
+    LCD.DEC(Degree)
 
       
     temp0 :=  TC.GET_TEMP(0)  
@@ -136,10 +143,6 @@ PUB MAIN
     count++
 
     waitcnt(cnt+clkfreq/8)
-
-pri fixA(d)
-  return d << 18 ~> 18
-
 
 PUB Setup
 

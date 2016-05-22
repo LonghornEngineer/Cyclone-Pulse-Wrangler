@@ -16,9 +16,15 @@ VAR
 
   byte counter
 
+  byte cbuf
+
   word ADC_store[4]
 
-  word FXO_store[3]
+  long FXO_store[3]
+
+  long FXO_Average0[32]
+  long FXO_Average1[32]
+  long FXO_Average2[32]
    
 OBJ
 
@@ -39,26 +45,26 @@ PUB RUN_SENSORS
   I2C.WriteByte(MAX11613, i2c#NoAddr, %0000_0001)
 
   I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $00)
-  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5B, $1F)
+  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5B, $9F)
   I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5C, $20)
   I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $0E, $01)
   I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $0D)  
    
   repeat
     CHECK_ID
-    CHECK_STATUS
-    CHECK_DATA
+    Status_FXO
+    Run_FXO
     Run_CNT
     Run_ADC
         
     
 return
 
-PUB Get_ID
+PUB Get_FXO_ID
 
 return WHO_AM_I
 
-PUB Get_Status
+PUB Get_FXO_Status
 
 return STATUS
 
@@ -71,19 +77,47 @@ PUB Get_Value (ch)
 
   return ADC_store[ch]
 
-PUB Get_Data (ch)
+PUB Get_FXO_Data (ch)
 
   return FXO_store[ch]
 
-PRI CHECK_DATA
+PRI Run_FXO | i, j, temp
 
-  FXO_store[0] := Swap_FXO(I2C.ReadWord(FXOS8700CQ, I2C#OneAddr | $33))  
-  FXO_store[1] := I2C.ReadByte(FXOS8700CQ, I2C#OneAddr | $34)
-  FXO_store[2] := I2C.ReadByte(FXOS8700CQ, I2C#OneAddr | $37)
+  FXO_Average0[cbuf] := fixA(Swap_FXO(I2C.ReadWord(FXOS8700CQ, I2C#OneAddr | $33)))
+  FXO_Average1[cbuf] := fixA(-1 * Swap_FXO(I2C.ReadWord(FXOS8700CQ, I2C#OneAddr | $35)))
+  FXO_Average2[cbuf] := fixA(Swap_FXO(I2C.ReadWord(FXOS8700CQ, I2C#OneAddr | $37)))
+
+  if(cbuf == 31)
+    cbuf := 0
+  else
+    cbuf++
+
+
+  temp := 0
+  repeat i from 0 to 31
+    temp := FXO_Average0[i] + temp
+   
+  FXO_store[0] := temp ~> 5
+
+  temp := 0
+  repeat i from 0 to 31
+    temp := FXO_Average1[i] + temp
+   
+  FXO_store[1] := temp ~> 5
+
+  temp := 0
+  repeat i from 0 to 31
+    temp := FXO_Average2[i] + temp
+   
+  FXO_store[2] := temp ~> 5
+  
 
 return
 
-PRI CHECK_STATUS
+pri fixA(d)
+  return ~~d
+
+PRI Status_FXO
 
   STATUS := I2C.ReadByte(FXOS8700CQ, I2C#OneAddr | $00)
 
