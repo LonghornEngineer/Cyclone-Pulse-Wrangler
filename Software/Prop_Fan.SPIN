@@ -6,7 +6,8 @@ OBJ
   LCD : "LCD_16X2_4BIT"
   TC  : "MAX31855K"
   SEN : "Prop_Fan_Sensors"
-  MATH: "SL32_INTEngine_2"
+  DERP: "Float32Full"
+  HARP: "F32_1_6"
   
 
 VAR
@@ -25,6 +26,8 @@ PUB MAIN
   LCD.START
   TC.START
   SEN.START
+  DERP.START
+  HARP.START
 
   Setup
   
@@ -111,8 +114,8 @@ PUB MAIN
     'LCD.BIN(ID,16)
 
     LCD.MOVE(20,4)
-    Degree := MATH.arcTan(SEN.Get_FXO_Data(1), SEN.Get_FXO_Data(0))
-    LCD.DEC(Degree)
+    Degree := DERP.Degrees(DERP.ATan2(HARP.FFloat(SEN.Get_FXO_Data(1)), HARP.FFloat(SEN.Get_FXO_Data(0))))
+    LCD.DEC(HARP.FTrunc(Degree))
 
       
     temp0 :=  TC.GET_TEMP(0)  
