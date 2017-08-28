@@ -30,13 +30,13 @@ OBJ
 
   I2C : "Basic_I2C_Driver_1"  
   
-PUB START
+PUB START(toggle)
 
-  cognew(RUN_SENSORS, @SENSOR_STACK) 
+  cognew(RUN_SENSORS(toggle), @SENSOR_STACK) 
 
 return
 
-PUB RUN_SENSORS
+PUB RUN_SENSORS(toggle)
 
   I2C.Initialize(SCL,SDA)
   waitcnt(cnt+clkfreq)
@@ -44,11 +44,21 @@ PUB RUN_SENSORS
   I2C.WriteByte(MAX11613, i2c#NoAddr, %1000_0000)
   I2C.WriteByte(MAX11613, i2c#NoAddr, %0000_0001)
 
-  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $00)
-  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5B, $9F)
-  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5C, $20)
-  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $0E, $01)
-  I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $0D)  
+  if(toggle == 1)
+
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $00)
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5B, $9F)
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5C, $20) 
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $0E, $01)
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $0D)  
+
+  else
+
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $00)
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5B, $1F)
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $5C, $20) 
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $0E, $01)
+    I2C.WriteByte(FXOS8700CQ, I2C#OneAddr | $2A, $0D)  
    
   repeat
     CHECK_ID

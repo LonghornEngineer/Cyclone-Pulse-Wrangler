@@ -23,15 +23,15 @@ return
 PUB RUN_TC | i
 
   OUTA[TC_SCK] := 0
-  OUTA[TC_CS0..TC_CS3] := $FF
+  OUTA[TC_CS0..TC_CS3] := $F
                                                                                       
   DIRA[TC_SCK] := 1
-  DIRA[TC_CS0..TC_CS3] := $FF 
+  DIRA[TC_CS0..TC_CS3] := $F 
 
   DIRA[TC_SO]  := 0
 
     repeat
-      repeat i from 0 to 7
+      repeat i from 0 to 3
         TC_Value[i] := read_TC(i)
 
 return
@@ -42,7 +42,7 @@ return TC_Value[TC_Num] & %0111
 
 PUB GET_TEMP(TC_Num)
                             
-return TC_Value[TC_Num] ~> 18  
+return TC_Value[TC_Num] ~> 20  
 
 PRI read_TC(TC_Num)
   
