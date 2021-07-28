@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
@@ -886,6 +886,15 @@
 <wire x1="-1.1" y1="-1" x2="-1.1" y2="1" width="0.1016" layer="21"/>
 <text x="-1.1" y="1.2" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
 </package>
+<package name="IHLP-2525">
+<smd name="P$1" x="-2.921" y="0" dx="3.429" dy="2.413" layer="1" rot="R90"/>
+<smd name="P$2" x="2.921" y="0" dx="3.429" dy="2.413" layer="1" rot="R90"/>
+<wire x1="-3.43" y1="3.235" x2="3.43" y2="3.235" width="0.1524" layer="21"/>
+<wire x1="3.43" y1="3.235" x2="3.43" y2="-3.235" width="0.1524" layer="21"/>
+<wire x1="3.43" y1="-3.235" x2="-3.43" y2="-3.235" width="0.1524" layer="21"/>
+<wire x1="-3.43" y1="-3.235" x2="-3.43" y2="3.235" width="0.1524" layer="21"/>
+<text x="-3.43" y="3.81" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1514,6 +1523,15 @@
 </technologies>
 </device>
 <device name="_XPL2010" package="XPL2010">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_IHLP-2525" package="IHLP-2525">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -7975,6 +7993,34 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <vertex x="-1.4224" y="-0.635"/>
 </polygon>
 </package>
+<package name="LT8614_QFN-18">
+<smd name="1" x="-1.4" y="1.25" dx="0.7" dy="0.25" layer="1"/>
+<smd name="2" x="-1.4" y="0.75" dx="0.7" dy="0.25" layer="1"/>
+<smd name="3" x="-1.4" y="0.25" dx="0.7" dy="0.25" layer="1"/>
+<smd name="4" x="-1.4" y="-0.25" dx="0.7" dy="0.25" layer="1"/>
+<smd name="6" x="-1.4" y="-1.25" dx="0.7" dy="0.25" layer="1"/>
+<smd name="7" x="-0.75" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="-0.25" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="9" x="0.25" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="0.75" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="11" x="1.4" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="13" x="1.4" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="14" x="1.4" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="15" x="1.4" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="16" x="1.4" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="17" x="0.75" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="18" x="0.25" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="19" x="-0.25" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="20" x="-0.75" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
+<smd name="21" x="0" y="-1.075" dx="0.4" dy="0.22" layer="1" rot="R90"/>
+<smd name="22" x="0" y="-0.305" dx="0.356" dy="0.22" layer="1" rot="R90"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.1524" layer="21"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.1524" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.1524" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.1524" layer="21"/>
+<text x="-2.5" y="2" size="0.8128" layer="21" font="vector" ratio="16" align="center">1</text>
+<text x="-2" y="3" size="0.8128" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LT8672">
@@ -8001,6 +8047,44 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <text x="0" y="-15.24" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
 <text x="0" y="-17.78" size="1.016" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="LT8614">
+<pin name="VIN1" x="-2.54" y="-2.54" visible="off" length="short"/>
+<pin name="GND1" x="-2.54" y="-15.24" visible="off" length="short"/>
+<pin name="PG" x="-2.54" y="-27.94" visible="off" length="short"/>
+<pin name="SYNC/MODE" x="-2.54" y="-33.02" visible="off" length="short"/>
+<pin name="TR/SS" x="-2.54" y="-43.18" visible="off" length="short"/>
+<pin name="INTVCC" x="-2.54" y="-53.34" visible="off" length="short"/>
+<pin name="RT" x="-2.54" y="-63.5" visible="off" length="short"/>
+<pin name="GND" x="22.86" y="-63.5" visible="off" length="short" rot="R180"/>
+<pin name="EN/UV" x="10.16" y="2.54" visible="off" length="short" rot="R270"/>
+<pin name="VIN2" x="22.86" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="GND2" x="22.86" y="-15.24" visible="off" length="short" rot="R180"/>
+<pin name="BST" x="22.86" y="-27.94" visible="off" length="short" rot="R180"/>
+<pin name="SW" x="22.86" y="-40.64" visible="off" length="short" rot="R180"/>
+<pin name="BIAS" x="22.86" y="-48.26" visible="off" length="short" rot="R180"/>
+<pin name="FB" x="22.86" y="-55.88" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-66.04" width="0.1524" layer="94"/>
+<wire x1="20.32" y1="-66.04" x2="0" y2="-66.04" width="0.1524" layer="94"/>
+<wire x1="0" y1="-66.04" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="19.05" y="-48.26" size="1.016" layer="97" font="vector" rot="R180" align="center-left">BIAS</text>
+<text x="19.05" y="-27.94" size="1.016" layer="97" font="vector" rot="R180" align="center-left">BST</text>
+<text x="10.16" y="-2.54" size="1.016" layer="97" font="vector" align="center">EN/UV</text>
+<text x="19.05" y="-55.88" size="1.016" layer="97" font="vector" rot="R180" align="center-left">FB</text>
+<text x="19.05" y="-63.5" size="1.016" layer="97" font="vector" rot="R180" align="center-left">GND</text>
+<text x="1.27" y="-15.24" size="1.016" layer="97" font="vector" align="center-left">GND1</text>
+<text x="19.05" y="-15.24" size="1.016" layer="97" font="vector" rot="R180" align="center-left">GND2</text>
+<text x="1.27" y="-53.34" size="1.016" layer="97" font="vector" align="center-left">INTVCC</text>
+<text x="1.27" y="-27.94" size="1.016" layer="97" font="vector" align="center-left">PG</text>
+<text x="1.27" y="-63.5" size="1.016" layer="97" font="vector" align="center-left">RT</text>
+<text x="19.05" y="-40.64" size="1.016" layer="97" font="vector" rot="R180" align="center-left">SW</text>
+<text x="1.27" y="-33.02" size="1.016" layer="97" font="vector" align="center-left">SYNC/MODE</text>
+<text x="1.27" y="-43.18" size="1.016" layer="97" font="vector" align="center-left">TR/SS</text>
+<text x="1.27" y="-2.54" size="1.016" layer="97" font="vector" align="center-left">VIN1</text>
+<text x="19.05" y="-2.54" size="1.016" layer="97" font="vector" rot="R180" align="center-left">VIN2</text>
+<text x="0" y="-68.58" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="0" y="-71.12" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LT8672" prefix="U" uservalue="yes">
@@ -8018,6 +8102,35 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <connect gate="G$1" pin="GND" pad="2 4"/>
 <connect gate="G$1" pin="PG" pad="3"/>
 <connect gate="G$1" pin="SOURCE" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT8614" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LT8614" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="IUDC#PBF" package="LT8614_QFN-18">
+<connects>
+<connect gate="G$1" pin="BIAS" pad="1"/>
+<connect gate="G$1" pin="BST" pad="3"/>
+<connect gate="G$1" pin="EN/UV" pad="14"/>
+<connect gate="G$1" pin="FB" pad="20"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="GND1" pad="6 7"/>
+<connect gate="G$1" pin="GND2" pad="10 11"/>
+<connect gate="G$1" pin="INTVCC" pad="2"/>
+<connect gate="G$1" pin="PG" pad="19"/>
+<connect gate="G$1" pin="RT" pad="15"/>
+<connect gate="G$1" pin="SW" pad="8 9 21 22"/>
+<connect gate="G$1" pin="SYNC/MODE" pad="17"/>
+<connect gate="G$1" pin="TR/SS" pad="16"/>
+<connect gate="G$1" pin="VIN1" pad="4"/>
+<connect gate="G$1" pin="VIN2" pad="13"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8752,6 +8865,40 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <attribute name="MPN" value="EEH-ZS1V471P"/>
 </part>
 <part name="U$14" library="MF_Aesthetics" deviceset="GND_RAIL" device=""/>
+<part name="U4" library="PP_PowerIC" deviceset="LT8614" device="IUDC#PBF" value="LT8614IUDC#PBF">
+<attribute name="MPN" value="LT8614IUDC#PBF"/>
+</part>
+<part name="C14" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0805" value="1uF">
+<attribute name="MPN" value="C0805X105K5RACAUTO"/>
+</part>
+<part name="C15" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0805" value="1uF">
+<attribute name="MPN" value="C0805X105K5RACAUTO"/>
+</part>
+<part name="U$17" library="MF_Aesthetics" deviceset="GND_RAIL" device=""/>
+<part name="U$18" library="MF_Aesthetics" deviceset="GND_RAIL" device=""/>
+<part name="R2" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="41.2K"/>
+<part name="R11" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="1M"/>
+<part name="R28" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="412K"/>
+<part name="U$19" library="MF_Aesthetics" deviceset="GND_RAIL" device=""/>
+<part name="C16" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value="4.7pF">
+<attribute name="MPN" value="C0603C479D5HACTU"/>
+</part>
+<part name="C17" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value="0.1uF">
+<attribute name="MPN" value="MF-CAP-0603-0.1uF"/>
+</part>
+<part name="C21" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0805" value="1uF">
+<attribute name="MPN" value="C0805X105K5RACAUTO"/>
+</part>
+<part name="C22" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value="10nF">
+<attribute name="MPN" value="C0603X103K5RAC3316"/>
+</part>
+<part name="C23" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_1210" value="47uF">
+<attribute name="MPN" value="GCJ32ER70J476KE01L"/>
+</part>
+<part name="L2" library="PP_Passives" deviceset="INDUCTOR" device="_IHLP-2525" value="IHLP2525CZER4R7M01">
+<attribute name="MPN" value="IHLP2525CZER4R7M01"/>
+</part>
+<part name="U$20" library="MF_Aesthetics" deviceset="POWER_RAIL" device="" value="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -9177,19 +9324,19 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <attribute name="VALUE" x="276.86" y="271.78" size="1.016" layer="96" font="vector"/>
 <attribute name="MPN" x="276.86" y="289.56" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="D1" gate="G$1" x="251.46" y="304.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="246.38" y="302.26" size="1.016" layer="95" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="248.92" y="302.26" size="1.016" layer="96" font="vector" rot="MR90" align="top-left"/>
-<attribute name="MPN" x="251.46" y="304.8" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D1" gate="G$1" x="266.7" y="307.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="269.24" y="309.88" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="269.24" y="307.34" size="1.016" layer="96" font="vector" rot="MR180" align="top-left"/>
+<attribute name="MPN" x="266.7" y="307.34" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="D3" gate="G$1" x="251.46" y="297.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="246.38" y="292.1" size="1.016" layer="95" font="vector" rot="MR90"/>
-<attribute name="VALUE" x="248.92" y="292.1" size="1.016" layer="96" font="vector" rot="MR90" align="top-left"/>
-<attribute name="MPN" x="251.46" y="297.18" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="D3" gate="G$1" x="266.7" y="299.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="269.24" y="302.26" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="269.24" y="299.72" size="1.016" layer="96" font="vector" rot="MR180" align="top-left"/>
+<attribute name="MPN" x="266.7" y="299.72" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="U$4" gate="G$1" x="251.46" y="287.02" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="236.22" y="317.5" smashed="yes">
-<attribute name="VALUE" x="236.22" y="320.04" size="1.016" layer="96" font="vector" align="center"/>
+<instance part="U$4" gate="G$1" x="266.7" y="289.56" smashed="yes"/>
+<instance part="U$5" gate="G$1" x="251.46" y="317.5" smashed="yes">
+<attribute name="VALUE" x="251.46" y="320.04" size="1.016" layer="96" font="vector" align="center"/>
 </instance>
 <instance part="U3" gate="G$1" x="292.1" y="309.88" smashed="yes" rot="MR90">
 <attribute name="NAME" x="284.48" y="317.5" size="1.016" layer="95" font="vector" rot="MR180"/>
@@ -9219,6 +9366,69 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <attribute name="MPN" x="345.44" y="302.26" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="U$14" gate="G$1" x="345.44" y="289.56" smashed="yes"/>
+<instance part="U4" gate="G$1" x="365.76" y="302.26" smashed="yes">
+<attribute name="NAME" x="365.76" y="233.68" size="1.016" layer="95" font="vector" align="top-left"/>
+<attribute name="VALUE" x="365.76" y="231.14" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="365.76" y="302.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="355.6" y="294.64" smashed="yes">
+<attribute name="NAME" x="358.14" y="295.91" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="358.14" y="293.37" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="355.6" y="294.64" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="396.24" y="294.64" smashed="yes">
+<attribute name="NAME" x="398.78" y="295.91" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="398.78" y="293.37" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="396.24" y="294.64" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="U$17" gate="G$1" x="355.6" y="281.94" smashed="yes"/>
+<instance part="U$18" gate="G$1" x="396.24" y="281.94" smashed="yes"/>
+<instance part="R2" gate="G$1" x="355.6" y="238.76" smashed="yes">
+<attribute name="NAME" x="353.06" y="243.84" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="353.06" y="241.3" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="R11" gate="G$1" x="411.48" y="246.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="414.02" y="248.92" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="414.02" y="246.38" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="R28" gate="G$1" x="411.48" y="231.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="414.02" y="233.68" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="414.02" y="231.14" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="U$19" gate="G$1" x="411.48" y="218.44" smashed="yes"/>
+<instance part="C16" gate="G$1" x="401.32" y="246.38" smashed="yes">
+<attribute name="NAME" x="403.86" y="247.65" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="403.86" y="245.11" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="401.32" y="246.38" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="C17" gate="G$1" x="391.16" y="269.24" smashed="yes">
+<attribute name="NAME" x="393.7" y="270.51" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="393.7" y="267.97" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="391.16" y="269.24" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="C21" gate="G$1" x="355.6" y="248.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="353.06" y="254" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="353.06" y="251.46" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="355.6" y="248.92" size="1.27" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C22" gate="G$1" x="355.6" y="259.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="353.06" y="264.16" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="353.06" y="261.62" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="355.6" y="259.08" size="1.27" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C23" gate="G$1" x="421.64" y="238.76" smashed="yes">
+<attribute name="NAME" x="424.18" y="240.03" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="424.18" y="237.49" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="421.64" y="238.76" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="L2" gate="G$1" x="406.4" y="261.62" smashed="yes">
+<attribute name="NAME" x="398.78" y="266.7" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="398.78" y="264.16" size="1.016" layer="96" font="vector"/>
+<attribute name="MPN" x="406.4" y="261.62" size="1.27" layer="96" display="off"/>
+</instance>
+<instance part="U$20" gate="G$1" x="421.64" y="271.78" smashed="yes">
+<attribute name="VALUE" x="421.64" y="274.32" size="1.016" layer="96" font="vector" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9473,7 +9683,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </segment>
 <segment>
 <pinref part="D3" gate="G$1" pin="CATHODE"/>
-<wire x1="251.46" y1="294.64" x2="251.46" y2="289.56" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="297.18" x2="266.7" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -9490,6 +9700,51 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="C13" gate="G$1" pin="NEG"/>
 <wire x1="345.44" y1="299.72" x2="345.44" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND2"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="287.02" x2="396.24" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="287.02" x2="396.24" y2="292.1" width="0.1524" layer="91"/>
+<pinref part="U$18" gate="G$1" pin="P$1"/>
+<wire x1="396.24" y1="284.48" x2="396.24" y2="287.02" width="0.1524" layer="91"/>
+<junction x="396.24" y="287.02"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND1"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="287.02" x2="355.6" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="287.02" x2="355.6" y2="292.1" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="P$1"/>
+<wire x1="355.6" y1="284.48" x2="355.6" y2="287.02" width="0.1524" layer="91"/>
+<junction x="355.6" y="287.02"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="350.52" y1="238.76" x2="347.98" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="238.76" x2="347.98" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="223.52" x2="391.16" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="391.16" y1="223.52" x2="411.48" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="223.52" x2="411.48" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U$19" gate="G$1" pin="P$1"/>
+<wire x1="411.48" y1="220.98" x2="411.48" y2="223.52" width="0.1524" layer="91"/>
+<junction x="411.48" y="223.52"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="353.06" y1="248.92" x2="347.98" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="248.92" x2="347.98" y2="238.76" width="0.1524" layer="91"/>
+<junction x="347.98" y="238.76"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="353.06" y1="259.08" x2="347.98" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="259.08" x2="347.98" y2="248.92" width="0.1524" layer="91"/>
+<junction x="347.98" y="248.92"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="411.48" y1="223.52" x2="421.64" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="223.52" x2="421.64" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
+<wire x1="388.62" y1="238.76" x2="391.16" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="238.76" x2="391.16" y2="223.52" width="0.1524" layer="91"/>
+<junction x="391.16" y="223.52"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -9601,6 +9856,28 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <junction x="-231.14" y="200.66"/>
 <label x="-228.6" y="200.66" size="1.016" layer="95" font="vector"/>
 <label x="-213.36" y="198.12" size="1.016" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="BIAS"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="254" x2="401.32" y2="254" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="254" x2="411.48" y2="254" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="254" x2="411.48" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="1"/>
+<wire x1="401.32" y1="248.92" x2="401.32" y2="254" width="0.1524" layer="91"/>
+<junction x="401.32" y="254"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="421.64" y1="241.3" x2="421.64" y2="254" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="254" x2="411.48" y2="254" width="0.1524" layer="91"/>
+<junction x="411.48" y="254"/>
+<pinref part="L2" gate="G$1" pin="P$2"/>
+<wire x1="414.02" y1="261.62" x2="421.64" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="261.62" x2="421.64" y2="254" width="0.1524" layer="91"/>
+<junction x="421.64" y="254"/>
+<pinref part="U$20" gate="G$1" pin="P$1"/>
+<wire x1="421.64" y1="261.62" x2="421.64" y2="269.24" width="0.1524" layer="91"/>
+<junction x="421.64" y="261.62"/>
+<label x="416.56" y="261.62" size="1.27" layer="95"/>
 </segment>
 </net>
 <net name="X1" class="0">
@@ -10287,21 +10564,21 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <segment>
 <pinref part="D1" gate="G$1" pin="ANODE"/>
 <pinref part="D3" gate="G$1" pin="ANODE"/>
-<wire x1="251.46" y1="302.26" x2="251.46" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="304.8" x2="266.7" y2="302.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="SOURCE"/>
-<wire x1="236.22" y1="312.42" x2="251.46" y2="312.42" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="312.42" x2="281.94" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="312.42" x2="266.7" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="312.42" x2="281.94" y2="312.42" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="312.42" x2="281.94" y2="292.1" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="CATHODE"/>
-<wire x1="251.46" y1="307.34" x2="251.46" y2="312.42" width="0.1524" layer="91"/>
-<junction x="251.46" y="312.42"/>
+<wire x1="266.7" y1="309.88" x2="266.7" y2="312.42" width="0.1524" layer="91"/>
+<junction x="266.7" y="312.42"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
-<wire x1="236.22" y1="312.42" x2="236.22" y2="314.96" width="0.1524" layer="91"/>
-<label x="238.76" y="312.42" size="1.27" layer="95"/>
+<wire x1="251.46" y1="312.42" x2="251.46" y2="314.96" width="0.1524" layer="91"/>
+<label x="254" y="312.42" size="1.27" layer="95"/>
 <pinref part="U3" gate="G$1" pin="SOURCE"/>
 <wire x1="284.48" y1="312.42" x2="281.94" y2="312.42" width="0.1524" layer="91"/>
 <junction x="281.94" y="312.42"/>
@@ -10336,6 +10613,26 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="335.28" y1="312.42" x2="345.44" y2="312.42" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="312.42" x2="345.44" y2="304.8" width="0.1524" layer="91"/>
 <junction x="335.28" y="312.42"/>
+<pinref part="U4" gate="G$1" pin="EN/UV"/>
+<wire x1="345.44" y1="312.42" x2="355.6" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="312.42" x2="375.92" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="312.42" x2="375.92" y2="304.8" width="0.1524" layer="91"/>
+<junction x="345.44" y="312.42"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="355.6" y1="297.18" x2="355.6" y2="299.72" width="0.1524" layer="91"/>
+<junction x="355.6" y="312.42"/>
+<pinref part="U4" gate="G$1" pin="VIN1"/>
+<wire x1="355.6" y1="299.72" x2="355.6" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="299.72" x2="355.6" y2="299.72" width="0.1524" layer="91"/>
+<junction x="355.6" y="299.72"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="375.92" y1="312.42" x2="396.24" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="312.42" x2="396.24" y2="299.72" width="0.1524" layer="91"/>
+<junction x="375.92" y="312.42"/>
+<pinref part="U4" gate="G$1" pin="VIN2"/>
+<wire x1="396.24" y1="299.72" x2="396.24" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="299.72" x2="396.24" y2="299.72" width="0.1524" layer="91"/>
+<junction x="396.24" y="299.72"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -10350,6 +10647,63 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="L1" gate="G$1" pin="P$2"/>
 <pinref part="U2" gate="G$1" pin="AUXSW"/>
 <wire x1="322.58" y1="294.64" x2="322.58" y2="292.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RT" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="U4" gate="G$1" pin="RT"/>
+<wire x1="360.68" y1="238.76" x2="363.22" y2="238.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FB" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="FB"/>
+<wire x1="388.62" y1="246.38" x2="396.24" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="246.38" x2="396.24" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="238.76" x2="401.32" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="238.76" x2="411.48" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="411.48" y1="238.76" x2="411.48" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="411.48" y1="238.76" x2="411.48" y2="236.22" width="0.1524" layer="91"/>
+<junction x="411.48" y="238.76"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="401.32" y1="243.84" x2="401.32" y2="238.76" width="0.1524" layer="91"/>
+<junction x="401.32" y="238.76"/>
+</segment>
+</net>
+<net name="BST" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="BST"/>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="388.62" y1="274.32" x2="391.16" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="274.32" x2="391.16" y2="271.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SW" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="SW"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="261.62" x2="391.16" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="391.16" y1="261.62" x2="391.16" y2="266.7" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="P$1"/>
+<wire x1="391.16" y1="261.62" x2="398.78" y2="261.62" width="0.1524" layer="91"/>
+<junction x="391.16" y="261.62"/>
+</segment>
+</net>
+<net name="INTVCC" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="INTVCC"/>
+<pinref part="C21" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="248.92" x2="358.14" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TR/SS" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="TR/SS"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="363.22" y1="259.08" x2="358.14" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
